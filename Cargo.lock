@@ -147,6 +147,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cf1de2fe8c75bc145a2f577add951f8134889b4795d47466a54a5c846d691693"
 
 [[package]]
+name = "bitflags"
+version = "2.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b4682ae6287fcf752ecaabbfcc7b6f9b72aa33933dc23a554d853aea8eea8635"
+
+[[package]]
 name = "bstr"
 version = "0.2.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -207,7 +213,7 @@ checksum = "37e58ac78573c40708d45522f0d80fa2f01cc4f9b4e2bf749807255454312002"
 dependencies = [
  "ansi_term 0.11.0",
  "atty",
- "bitflags",
+ "bitflags 1.2.1",
  "strsim",
  "term_size",
  "textwrap",
@@ -464,7 +470,7 @@ version = "0.13.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "17929de7239dea9f68aa14f94b2ab4974e7b24c1314275ffcc12a7758172fa18"
 dependencies = [
- "bitflags",
+ "bitflags 1.2.1",
  "libc",
  "libgit2-sys",
  "log",
@@ -581,9 +587,9 @@ checksum = "830d08ce1d1d941e6b30645f1a0eb5643013d835ce3779a5fc208261dbe10f55"
 
 [[package]]
 name = "libc"
-version = "0.2.95"
+version = "0.2.147"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "789da6d93f1b866ffe175afc5322a4d76c038605a1c3319bb57b06967ca98a36"
+checksum = "b4668fb0ea861c1df094127ac5f1da3409a82116a4ba74fca2e58ef927159bb3"
 
 [[package]]
 name = "libgit2-sys"
@@ -655,15 +661,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b16bd47d9e329435e309c58469fe0791c2d0d1ba96ec0954152a5ae2b04387dc"
 
 [[package]]
-name = "memoffset"
-version = "0.6.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "59accc507f1338036a0477ef61afdae33cde60840f4dfe481319ce3ad116ddf9"
-dependencies = [
- "autocfg",
-]
-
-[[package]]
 name = "miniz_oxide"
 version = "0.4.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -675,15 +672,13 @@ dependencies = [
 
 [[package]]
 name = "nix"
-version = "0.21.0"
+version = "0.27.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5c3728fec49d363a50a8828a190b379a446cc5cf085c06259bbbeb34447e4ec7"
+checksum = "2eb04e9c688eff1c89d72b407f168cf79bb9e867a9d3323ed6c01519eb9cc053"
 dependencies = [
- "bitflags",
- "cc",
+ "bitflags 2.4.0",
  "cfg-if",
  "libc",
- "memoffset",
 ]
 
 [[package]]
@@ -717,7 +712,7 @@ version = "6.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "30b46fd9edbc018f0be4e366c24c46db44fac49cd01c039ae85308088b089dd5"
 dependencies = [
- "bitflags",
+ "bitflags 1.2.1",
  "lazy_static",
  "libc",
  "onig_sys",
@@ -907,7 +902,7 @@ version = "0.2.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "742739e41cd49414de871ea5e549afb7e2a3ac77b589bcbebe8c82fab37147fc"
 dependencies = [
- "bitflags",
+ "bitflags 1.2.1",
 ]
 
 [[package]]
@@ -1113,7 +1108,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2bfac2b23b4d049dc9a89353b4e06bbc85a8f42020cccbe5409a115cf19031e5"
 dependencies = [
  "bincode",
- "bitflags",
+ "bitflags 1.2.1",
  "fancy-regex",
  "flate2",
  "fnv",
